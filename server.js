@@ -29,8 +29,13 @@ const port = argv.port || 3000;
 // If there is an error, put it on the console error and return. 
 // Do not be nice about exiting.
 
-
-
+fs.readFile('./public/index.html', 'utf8', (err,data) => {
+    if(err){
+        console.error(err);
+        return; 
+    }
+    console.log(data);
+});
 
 
 // Define a const `server` as an arrow function using http.createServer. 
