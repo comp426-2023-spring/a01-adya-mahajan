@@ -27,5 +27,8 @@
   "homepage": "https://github.com/comp426-2023-spring/a01-adya-mahajan#readme",
   "dependencies": {
     "minimist": "^1.2.7"
+  },
+  "devDependencies": {
+    "@types/minimist": "^1.2.2"
   }
 }
